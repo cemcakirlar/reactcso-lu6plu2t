@@ -1,0 +1,7 @@
+{
+  "name": "@components-studio/cemcakirlar.reactcso-lu6plu2t",
+  "version": "0.0.0",
+  "scripts": {
+    "serve": "npx cso-cli@latest serve qIYqNaCrfzG4m57snzbw --open"
+  }
+}
