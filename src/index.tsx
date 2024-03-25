@@ -1,4 +1,41 @@
-import React from "react";
+import React ,{useState} from "react";
+    const styles = `.cem-counter * {
+          font-size: 200%;
+        }
+
+        .cem-counter span {
+          width: 4rem;
+          display: inline-block;
+          text-align: center;
+        }
+
+        .cem-counter button {
+          width: 5rem;
+          height: 5rem;
+          border: none;
+          border-radius: 10px;
+          background-color: blue;
+          color: white;
+        }`;
+
+export const CemCounter = ()=>{
+
+const [count,setCount] = useState(0)
+
+ return (
+      <div className="cem-counter">
+        <style>{styles}</style>
+        <button onClick={() => setCount(count-1)}>
+          -
+        </button>
+        <span>{count}</span>
+        <button onClick={() => setCount(count+1)}>
+          +
+        </button>
+      </div>
+ )
+
+}
 
 interface State {
   count: number;

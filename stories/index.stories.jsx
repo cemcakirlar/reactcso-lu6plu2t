@@ -1,5 +1,5 @@
 import React from "react";
-import MyCounter from "../src/index";
+import MyCounter , {CemCounter}from "../src/index";
 
 export default {
   parameters: {
@@ -8,3 +8,4 @@ export default {
 };
 
 export const story1 = () => <MyCounter></MyCounter>;
+export const story2 = () => <CemCounter></CemCounter>;
